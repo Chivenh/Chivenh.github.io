@@ -4,10 +4,11 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="常用HTML Meta标签, FlyTiger,flyTiger,fhtiger,窗格,飞虎,飛琥,IT资源">
-    <meta name="description" content="&amp;lt;meta name=&#34;author&#34; content=&#34;flyTiger&#34;&gt;
-&amp;lt;meta name=&#34;description&#34; content=&#34;飞虎窗格,github.fhtiger.com&#34;&gt;
-&amp;lt;meta name=">
+    <meta name="keywords" content="JavaWeb项目中获取客户端类型, FlyTiger,flyTiger,fhtiger,窗格,飞虎,飛琥,IT资源">
+    <meta name="description" content="#从事JavaWeb项目的开发,总会遇到需要根据不同客户端给予不同响应的需求,这里介绍一个好用的工具包.
+
+1.引入Maven依赖包UserAgentUtils pom
+&amp;lt;!-- 最好使用最新版本的依赖,因为其中所有客户端的软件版本一">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -15,7 +16,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>常用HTML Meta标签 | 飞虎的窗格</title>
+    <title>JavaWeb项目中获取客户端类型 | 飞虎的窗格</title>
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -259,13 +260,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/21.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        常用HTML Meta标签
+                        JavaWeb项目中获取客户端类型
                     </div>
                 </div>
             </div>
@@ -275,10 +276,99 @@
 
 
 
-<main class="container content">
+<main class="post-container content">
 
     
-    <!-- 文章内容详情 -->
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        margin: 35px 0 15px 0;
+        padding-left: 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #toc-content .is-active-link::before {
+        background-color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 20px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
 <div id="artDetail">
     <div class="card">
         <div class="card-content article-info">
@@ -287,12 +377,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/HTML/" target="_blank">
-                                <span class="chip bg-color">HTML</span>
+                            <a href="/tags/JAVA/" target="_blank">
+                                <span class="chip bg-color">JAVA</span>
                             </a>
                         
-                            <a href="/tags/META/" target="_blank">
-                                <span class="chip bg-color">META</span>
+                            <a href="/tags/JAVA-WEB/" target="_blank">
+                                <span class="chip bg-color">JAVA-WEB</span>
                             </a>
                         
                     </div>
@@ -303,12 +393,8 @@
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/HTML/" class="post-category" target="_blank">
-                                HTML
-                            </a>
-                        
-                            <a href="/categories/HTML/WEB/" class="post-category" target="_blank">
-                                WEB
+                            <a href="/categories/JAVA/" class="post-category" target="_blank">
+                                JAVA
                             </a>
                         
                     </div>
@@ -335,41 +421,81 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>author<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>flyTiger<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>description<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>飞虎窗格,github.fhtiger.com<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>keywords<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>fhtiger,ghostFlyTiger,flyTiger,飞虎,窗格,飞虎,窗格<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>title<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>飞虎窗格<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>renderer<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>webkit|ie-comp|ie-stand<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>utf-8<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>base</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>/html/<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">http-equiv</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>X-UA-Compatible<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>IE<span class="token punctuation">=</span>edge<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>width<span class="token punctuation">=</span>device-width, initial-scale<span class="token punctuation">=</span>1,user-scalable<span class="token punctuation">=</span>no<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>viewport<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
-<span class="token comment" spellcheck="true">&lt;!-- 不缓存--></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">http-equiv</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>pragma<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>no-cache<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">http-equiv</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>cache-control<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>no-cache<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">http-equiv</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>expires<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>0<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-<span class="token comment" spellcheck="true">&lt;!-- 定时刷新页面 --></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">http-equiv</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>refresh<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>0;url<span class="token punctuation">=</span>/staticview/index.jhw.html<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-<span class="token comment" spellcheck="true">&lt;!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 --></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>HandheldFriendly<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-<span class="token comment" spellcheck="true">&lt;!-- 微软的老式浏览器 --></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>MobileOptimized<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>320<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-<span class="token comment" spellcheck="true">&lt;!-- uc强制竖屏 --></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>screen-orientation<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>portrait<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-<span class="token comment" spellcheck="true">&lt;!-- QQ强制竖屏 --></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>x5-orientation<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>portrait<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-<span class="token comment" spellcheck="true">&lt;!-- UC强制全屏 --></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>full-screen<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>yes<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-<span class="token comment" spellcheck="true">&lt;!-- QQ强制全屏 --></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>x5-fullscreen<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-<span class="token comment" spellcheck="true">&lt;!-- UC应用模式 --></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>browsermode<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>application<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-<span class="token comment" spellcheck="true">&lt;!-- QQ应用模式 --></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>x5-page-mode<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>app<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-<span class="token comment" spellcheck="true">&lt;!-- windows phone 点击无高光 --></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>msapplication-tap-highlight<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>no<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-<span class="token comment" spellcheck="true">&lt;!-- 适应移动端end --></span>
+                <p>#从事JavaWeb项目的开发,总会遇到需要根据不同客户端给予不同响应的需求,这里介绍一个好用的工具包.</p>
+<hr>
+<h2 id="1-引入Maven依赖包"><a href="#1-引入Maven依赖包" class="headerlink" title="1.引入Maven依赖包"></a>1.引入Maven依赖包</h2><p><a href="https://mvnrepository.com/artifact/eu.bitwalker/UserAgentUtils" target="_blank" rel="noopener">UserAgentUtils pom</a></p>
+<pre class=" language-xml"><code class="language-xml"><span class="token comment" spellcheck="true">&lt;!-- 最好使用最新版本的依赖,因为其中所有客户端的软件版本一直在更新中,使用最新的依赖才能准确的得到客户端的类型 --></span>
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dependency</span><span class="token punctuation">></span></span>
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>groupId</span><span class="token punctuation">></span></span>eu.bitwalker<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>groupId</span><span class="token punctuation">></span></span>
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>artifactId</span><span class="token punctuation">></span></span>UserAgentUtils<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>artifactId</span><span class="token punctuation">></span></span>
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>version</span><span class="token punctuation">></span></span>1.21<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>version</span><span class="token punctuation">></span></span>
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dependency</span><span class="token punctuation">></span></span>
 </code></pre>
+<h2 id="2-创建一个自己的小工具类"><a href="#2-创建一个自己的小工具类" class="headerlink" title="2.创建一个自己的小工具类"></a>2.创建一个自己的小工具类</h2><pre class=" language-java"><code class="language-java">    <span class="token keyword">public</span> <span class="token keyword">final</span> <span class="token keyword">class</span> <span class="token class-name">ClientExamineUtil</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token keyword">final</span> String UserAgentHeader <span class="token operator">=</span>  <span class="token string">"user-agent"</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/**
+     * 获取客户端代理对象header值
+     * @param request 
+     * @return
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> String <span class="token function">getUserAgent</span><span class="token punctuation">(</span>HttpServletRequest request<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">return</span> request<span class="token punctuation">.</span><span class="token function">getHeader</span><span class="token punctuation">(</span>UserAgentHeader<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment" spellcheck="true">/**
+     * 获取用户代理对象
+     * @return
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> UserAgent <span class="token function">getUserAgent</span><span class="token punctuation">(</span>String userAgent<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">return</span> UserAgent<span class="token punctuation">.</span><span class="token function">parseUserAgentString</span><span class="token punctuation">(</span>userAgent<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment" spellcheck="true">/**
+     * 获取设备类型
+     * @return
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> DeviceType <span class="token function">getDeviceType</span><span class="token punctuation">(</span>String userAgent<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token function">getUserAgent</span><span class="token punctuation">(</span>userAgent<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getOperatingSystem</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getDeviceType</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment" spellcheck="true">/**
+     * 是否是PC
+     * @return
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">boolean</span> <span class="token function">isPc</span><span class="token punctuation">(</span>String userAgent<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">return</span> DeviceType<span class="token punctuation">.</span>COMPUTER<span class="token punctuation">.</span><span class="token function">equals</span><span class="token punctuation">(</span><span class="token function">getDeviceType</span><span class="token punctuation">(</span>userAgent<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment" spellcheck="true">/**
+     * 是否是手机
+     * @return
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">boolean</span> <span class="token function">isMobile</span><span class="token punctuation">(</span>String userAgent<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">return</span> DeviceType<span class="token punctuation">.</span>MOBILE<span class="token punctuation">.</span><span class="token function">equals</span><span class="token punctuation">(</span><span class="token function">getDeviceType</span><span class="token punctuation">(</span>userAgent<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment" spellcheck="true">/**
+     * 是否是平板
+     * @return
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">boolean</span> <span class="token function">isTablet</span><span class="token punctuation">(</span>String userAgent<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">return</span> DeviceType<span class="token punctuation">.</span>TABLET<span class="token punctuation">.</span><span class="token function">equals</span><span class="token punctuation">(</span><span class="token function">getDeviceType</span><span class="token punctuation">(</span>userAgent<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment" spellcheck="true">/**
+     * 是否是手机和平板
+     * @return
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">boolean</span> <span class="token function">isMobileOrTablet</span><span class="token punctuation">(</span>String userAgent<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        DeviceType deviceType <span class="token operator">=</span> <span class="token function">getDeviceType</span><span class="token punctuation">(</span>userAgent<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> DeviceType<span class="token punctuation">.</span>MOBILE<span class="token punctuation">.</span><span class="token function">equals</span><span class="token punctuation">(</span>deviceType<span class="token punctuation">)</span> <span class="token operator">||</span> DeviceType<span class="token punctuation">.</span>TABLET<span class="token punctuation">.</span><span class="token function">equals</span><span class="token punctuation">(</span>deviceType<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+</code></pre>
+<h2 id="3-现在就可以美美地判断请求那头是什么客户端了"><a href="#3-现在就可以美美地判断请求那头是什么客户端了" class="headerlink" title="3.现在就可以美美地判断请求那头是什么客户端了"></a>3.现在就可以美美地判断请求那头是什么客户端了</h2><p> <code>当然,这个工具的用途不止于此,可以根据它现有的功能,实现很多自己想要的功能.</code></p>
 
             </div>
             <hr>
@@ -517,7 +643,7 @@
                     </span>
                     <a href="https://github.fhtiger.com" class="b-link-green">飞虎的窗格</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2019/04/14/常用HTML-Meta标签/" class="b-link-green">常用HTML Meta标签</a>
+                    <a href="/2019/04/14/JavaWeb项目中获取客户端类型/" class="b-link-green">JavaWeb项目中获取客户端类型</a>
                 </p>
             </div>
         </div>
@@ -563,7 +689,8 @@
         
         <div class="article col s12 m6 overflow-policy" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2019/04/14/JavaWeb项目中获取客户端类型/">
                     <div class="card-image">
@@ -580,9 +707,9 @@
 1.引入Maven依赖包UserAgentUtils pom
 &lt;!-- 最好使用最新版本的依赖,因为其中所有客户端的软件版本一</div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-04-14
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-04-14
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -595,6 +722,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -617,18 +745,19 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/04/14/JAVA8-Lambda表达式的简单应用/">
+                <a href="/2019/04/14/常用HTML-Meta标签/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="JAVA8 - Lambda表达式的简单应用">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="常用HTML Meta标签">
                         
-                        <span class="card-title">JAVA8 - Lambda表达式的简单应用</span>
+                        <span class="card-title">常用HTML Meta标签</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary block-with-text">前言: JAVA8带来了很多有趣和高效的新东西,其中Lambda表达式和函数式编程应该是其中最靓的点了.今天我们来简单认识下 JAVA8-Lambda
-首先,我们来看点小知识,平常我们在写了业务流程后,总不可避免的要构造一些测试数据来验证我</div>
+                    <div class="summary block-with-text">&lt;meta name="author" content="flyTiger">
+&lt;meta name="description" content="飞虎窗格,github.fhtiger.com">
+&lt;meta name=</div>
                     <div class="publish-info">
                             <span class="publish-date">
                                 <i class="fa fa-clock-o fa-fw icon-date"></i>2019-04-14
@@ -637,8 +766,12 @@
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/JAVA/" class="post-category" target="_blank">
-                                    JAVA
+                            <a href="/categories/HTML/" class="post-category" target="_blank">
+                                    HTML
+                                </a>
+                            
+                            <a href="/categories/HTML/WEB/" class="post-category" target="_blank">
+                                    WEB
                                 </a>
                             
                             
@@ -648,12 +781,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/JAVA/" target="_blank">
-                        <span class="chip bg-color">JAVA</span>
+                    <a href="/tags/HTML/" target="_blank">
+                        <span class="chip bg-color">HTML</span>
                     </a>
                     
-                    <a href="/tags/JAVA8/" target="_blank">
-                        <span class="chip bg-color">JAVA8</span>
+                    <a href="/tags/META/" target="_blank">
+                        <span class="chip bg-color">META</span>
                     </a>
                     
                 </div>
@@ -703,6 +836,99 @@
     });
 </script>
 
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget">
+            <div class="toc-title"><i class="fa fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fa fa-list"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            // headingsOffset: -205,
+            headingSelector: 'h3, h4, h5'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h3, h4, h5').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).slideUp(500);
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).slideDown(500);
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
     
 
 </main>
