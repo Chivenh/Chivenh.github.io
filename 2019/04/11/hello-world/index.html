@@ -583,6 +583,7 @@
         repo: 'ghostFlyTiger.github.io.issues',
         owner: 'ghostFlyTiger',
         admin: ['ghostFlyTiger'],
+        //用md5处理路径,以防止路径过长而不能正常初始化issue
         id: md5( window.location.pathname),
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
@@ -706,7 +707,7 @@
             + '来源: 飞虎的窗格<br />'
             + '作者: 飛琥<br />'
             + '链接: <a href="' + url + '">' + url + '</a><br />'
-            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+            + '本文章著作权归ghostFlyTiger所有，任何形式的转载都请注明出处。';
 
         selection.selectAllChildren(newdiv);
         window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
