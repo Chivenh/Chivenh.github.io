@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Intellij-Idea 好用的插件</title>
+      <link href="/2019/04/14/Intellij-Idea-%E5%A5%BD%E7%94%A8%E7%9A%84%E6%8F%92%E4%BB%B6/"/>
+      <url>/2019/04/14/Intellij-Idea-%E5%A5%BD%E7%94%A8%E7%9A%84%E6%8F%92%E4%BB%B6/</url>
+      
+        <content type="html"><![CDATA[<h2 id="在使用Intellij-IDEA时发现的好用的插件一览"><a href="#在使用Intellij-IDEA时发现的好用的插件一览" class="headerlink" title="在使用Intellij-IDEA时发现的好用的插件一览"></a>在使用Intellij-IDEA时发现的好用的插件一览</h2><pre class=" language-text"><code class="language-text">JRebelrequest mapper //查找controller等路径映射方便Eclipse Code Formatter 在idea中使用eclipse 格式化配置文件RegexpTester 正则测试工具Builder Generator (1.1.7) 生成 建造者模式的代码.Easy Code (1.1.2-SNAPSHOT) 根据数据库表结构,自动生成代码工具.String Manipulation (6.1.143.000.0) UTF-8字符串转UNICODE,UNICODE转UTF-8字符串Vue.js 对Vue的便捷使用支持File Watchers (182.3911.9) 文件监听器,可以监听less文件自动编译成css,或者监听es6文件,使用babel自动转换成es5代码等功能.NodeJsOro PHPStorm Plugin   Plugin for the PHPStorm that will help to increase the development speed on the projects based on the OroPlatform.    PHP在idea的支持插件PHP v183.4886.46Pug(ex-Jade)  Support for Pug (formerly known as Jade), a template language for JavaScript     一个js后端模板语言Lombok Plugin v0.23-2018.3Jpa Support v1.0.5 Maven Helper v3.7.172.1454.3  Maven 依赖查看Key Promoter X v5.12 查看并提示快捷键操作.gitignore 添加编辑.gitignoreGit Flow Integration git流Translation 翻译</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> NOTES </category>
+          
+          <category> Intellij-IDEA </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Intellij-IDEA </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>JavaWeb项目中获取客户端类型</title>
       <link href="/2019/04/14/JavaWeb%E9%A1%B9%E7%9B%AE%E4%B8%AD%E8%8E%B7%E5%8F%96%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%B1%BB%E5%9E%8B/"/>
       <url>/2019/04/14/JavaWeb%E9%A1%B9%E7%9B%AE%E4%B8%AD%E8%8E%B7%E5%8F%96%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%B1%BB%E5%9E%8B/</url>

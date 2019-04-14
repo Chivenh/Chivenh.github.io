@@ -4,9 +4,13 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="JavaWeb项目中获取客户端类型, FlyTiger,flyTiger,fhtiger,窗格,飞虎,飛琥,IT资源">
-    <meta name="description" content="从事JavaWeb项目的开发,总会遇到需要根据不同客户端给予不同响应的需求,这里介绍一个好用的工具包.1.引入Maven依赖包UserAgentUtils pom
-&amp;lt;!-- 最好使用最新版本的依赖,因为其中所有客户端的软件版本一直在更">
+    <meta name="keywords" content="Intellij-Idea 好用的插件, FlyTiger,flyTiger,fhtiger,窗格,飞虎,飛琥,IT资源">
+    <meta name="description" content="在使用Intellij-IDEA时发现的好用的插件一览JRebel
+
+request mapper //查找controller等路径映射方便
+
+Eclipse Code Formatter 在idea中使用eclipse 格式化配置文件
+">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -14,7 +18,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>JavaWeb项目中获取客户端类型 | 飞虎的窗格</title>
+    <title>Intellij-Idea 好用的插件 | 飞虎的窗格</title>
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -258,13 +262,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/21.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        JavaWeb项目中获取客户端类型
+                        Intellij-Idea 好用的插件
                     </div>
                 </div>
             </div>
@@ -375,12 +379,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/JAVA/" target="_blank">
-                                <span class="chip bg-color">JAVA</span>
-                            </a>
-                        
-                            <a href="/tags/JAVA-WEB/" target="_blank">
-                                <span class="chip bg-color">JAVA-WEB</span>
+                            <a href="/tags/Intellij-IDEA/" target="_blank">
+                                <span class="chip bg-color">Intellij-IDEA</span>
                             </a>
                         
                     </div>
@@ -391,8 +391,12 @@
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/JAVA/" class="post-category" target="_blank">
-                                JAVA
+                            <a href="/categories/NOTES/" class="post-category" target="_blank">
+                                NOTES
+                            </a>
+                        
+                            <a href="/categories/NOTES/Intellij-IDEA/" class="post-category" target="_blank">
+                                Intellij-IDEA
                             </a>
                         
                     </div>
@@ -419,79 +423,49 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="从事JavaWeb项目的开发-总会遇到需要根据不同客户端给予不同响应的需求-这里介绍一个好用的工具包"><a href="#从事JavaWeb项目的开发-总会遇到需要根据不同客户端给予不同响应的需求-这里介绍一个好用的工具包" class="headerlink" title="从事JavaWeb项目的开发,总会遇到需要根据不同客户端给予不同响应的需求,这里介绍一个好用的工具包."></a>从事JavaWeb项目的开发,总会遇到需要根据不同客户端给予不同响应的需求,这里介绍一个好用的工具包.</h2><h3 id="1-引入Maven依赖包"><a href="#1-引入Maven依赖包" class="headerlink" title="1.引入Maven依赖包"></a>1.引入Maven依赖包</h3><p><a href="https://mvnrepository.com/artifact/eu.bitwalker/UserAgentUtils" target="_blank" rel="noopener">UserAgentUtils pom</a></p>
-<pre class=" language-xml"><code class="language-xml"><span class="token comment" spellcheck="true">&lt;!-- 最好使用最新版本的依赖,因为其中所有客户端的软件版本一直在更新中,使用最新的依赖才能准确的得到客户端的类型 --></span>
-   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dependency</span><span class="token punctuation">></span></span>
-   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>groupId</span><span class="token punctuation">></span></span>eu.bitwalker<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>groupId</span><span class="token punctuation">></span></span>
-   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>artifactId</span><span class="token punctuation">></span></span>UserAgentUtils<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>artifactId</span><span class="token punctuation">></span></span>
-   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>version</span><span class="token punctuation">></span></span>1.21<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>version</span><span class="token punctuation">></span></span>
-   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dependency</span><span class="token punctuation">></span></span>
-</code></pre>
-<h3 id="2-创建一个自己的小工具类"><a href="#2-创建一个自己的小工具类" class="headerlink" title="2.创建一个自己的小工具类"></a>2.创建一个自己的小工具类</h3><pre class=" language-java"><code class="language-java">    <span class="token keyword">public</span> <span class="token keyword">final</span> <span class="token keyword">class</span> <span class="token class-name">ClientExamineUtil</span> <span class="token punctuation">{</span>
+                <h2 id="在使用Intellij-IDEA时发现的好用的插件一览"><a href="#在使用Intellij-IDEA时发现的好用的插件一览" class="headerlink" title="在使用Intellij-IDEA时发现的好用的插件一览"></a>在使用Intellij-IDEA时发现的好用的插件一览</h2><pre class=" language-text"><code class="language-text">JRebel
 
-    <span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token keyword">final</span> String UserAgentHeader <span class="token operator">=</span>  <span class="token string">"user-agent"</span><span class="token punctuation">;</span>
+request mapper //查找controller等路径映射方便
 
-    <span class="token comment" spellcheck="true">/**
-     * 获取客户端代理对象header值
-     * @param request 
-     * @return
-     */</span>
-    <span class="token keyword">public</span> <span class="token keyword">static</span> String <span class="token function">getUserAgent</span><span class="token punctuation">(</span>HttpServletRequest request<span class="token punctuation">)</span><span class="token punctuation">{</span>
-        <span class="token keyword">return</span> request<span class="token punctuation">.</span><span class="token function">getHeader</span><span class="token punctuation">(</span>UserAgentHeader<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
+Eclipse Code Formatter 在idea中使用eclipse 格式化配置文件
 
-    <span class="token comment" spellcheck="true">/**
-     * 获取用户代理对象
-     * @return
-     */</span>
-    <span class="token keyword">public</span> <span class="token keyword">static</span> UserAgent <span class="token function">getUserAgent</span><span class="token punctuation">(</span>String userAgent<span class="token punctuation">)</span><span class="token punctuation">{</span>
-        <span class="token keyword">return</span> UserAgent<span class="token punctuation">.</span><span class="token function">parseUserAgentString</span><span class="token punctuation">(</span>userAgent<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
+RegexpTester 正则测试工具
 
-    <span class="token comment" spellcheck="true">/**
-     * 获取设备类型
-     * @return
-     */</span>
-    <span class="token keyword">public</span> <span class="token keyword">static</span> DeviceType <span class="token function">getDeviceType</span><span class="token punctuation">(</span>String userAgent<span class="token punctuation">)</span><span class="token punctuation">{</span>
-        <span class="token keyword">return</span> <span class="token function">getUserAgent</span><span class="token punctuation">(</span>userAgent<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getOperatingSystem</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getDeviceType</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
+Builder Generator (1.1.7) 生成 建造者模式的代码.
 
-    <span class="token comment" spellcheck="true">/**
-     * 是否是PC
-     * @return
-     */</span>
-    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">boolean</span> <span class="token function">isPc</span><span class="token punctuation">(</span>String userAgent<span class="token punctuation">)</span><span class="token punctuation">{</span>
-        <span class="token keyword">return</span> DeviceType<span class="token punctuation">.</span>COMPUTER<span class="token punctuation">.</span><span class="token function">equals</span><span class="token punctuation">(</span><span class="token function">getDeviceType</span><span class="token punctuation">(</span>userAgent<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
+Easy Code (1.1.2-SNAPSHOT) 根据数据库表结构,自动生成代码工具.
 
-    <span class="token comment" spellcheck="true">/**
-     * 是否是手机
-     * @return
-     */</span>
-    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">boolean</span> <span class="token function">isMobile</span><span class="token punctuation">(</span>String userAgent<span class="token punctuation">)</span><span class="token punctuation">{</span>
-        <span class="token keyword">return</span> DeviceType<span class="token punctuation">.</span>MOBILE<span class="token punctuation">.</span><span class="token function">equals</span><span class="token punctuation">(</span><span class="token function">getDeviceType</span><span class="token punctuation">(</span>userAgent<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
+String Manipulation (6.1.143.000.0) UTF-8字符串转UNICODE,UNICODE转UTF-8字符串
 
-    <span class="token comment" spellcheck="true">/**
-     * 是否是平板
-     * @return
-     */</span>
-    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">boolean</span> <span class="token function">isTablet</span><span class="token punctuation">(</span>String userAgent<span class="token punctuation">)</span><span class="token punctuation">{</span>
-        <span class="token keyword">return</span> DeviceType<span class="token punctuation">.</span>TABLET<span class="token punctuation">.</span><span class="token function">equals</span><span class="token punctuation">(</span><span class="token function">getDeviceType</span><span class="token punctuation">(</span>userAgent<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
+Vue.js 对Vue的便捷使用支持
 
-    <span class="token comment" spellcheck="true">/**
-     * 是否是手机和平板
-     * @return
-     */</span>
-    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">boolean</span> <span class="token function">isMobileOrTablet</span><span class="token punctuation">(</span>String userAgent<span class="token punctuation">)</span><span class="token punctuation">{</span>
-        DeviceType deviceType <span class="token operator">=</span> <span class="token function">getDeviceType</span><span class="token punctuation">(</span>userAgent<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">return</span> DeviceType<span class="token punctuation">.</span>MOBILE<span class="token punctuation">.</span><span class="token function">equals</span><span class="token punctuation">(</span>deviceType<span class="token punctuation">)</span> <span class="token operator">||</span> DeviceType<span class="token punctuation">.</span>TABLET<span class="token punctuation">.</span><span class="token function">equals</span><span class="token punctuation">(</span>deviceType<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span>
+File Watchers (182.3911.9) 文件监听器,可以监听less文件自动编译成css,或者监听es6文件,使用babel自动转换成es5代码等功能.
+
+NodeJs
+
+Oro PHPStorm Plugin   Plugin for the PHPStorm that will help to increase the development speed on the projects based on the OroPlatform.
+    PHP在idea的支持插件
+
+PHP v183.4886.46
+
+Pug(ex-Jade)  Support for Pug (formerly known as Jade), a template language for JavaScript
+     一个js后端模板语言
+
+Lombok Plugin v0.23-2018.3
+
+Jpa Support v1.0.5 
+
+Maven Helper v3.7.172.1454.3  Maven 依赖查看
+
+Key Promoter X v5.12 查看并提示快捷键操作
+
+.gitignore 添加编辑.gitignore
+
+Git Flow Integration git流
+
+Translation 翻译
 
 </code></pre>
-<h3 id="3-现在就可以美美地判断请求那头是什么客户端了"><a href="#3-现在就可以美美地判断请求那头是什么客户端了" class="headerlink" title="3.现在就可以美美地判断请求那头是什么客户端了"></a>3.现在就可以美美地判断请求那头是什么客户端了</h3><p> <code>当然,这个工具的用途不止于此,可以根据它现有的功能,实现很多自己想要的功能.</code></p>
 
             </div>
             <hr>
@@ -639,7 +613,7 @@
                     </span>
                     <a href="https://github.fhtiger.com" class="b-link-green">飞虎的窗格</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2019/04/14/JavaWeb项目中获取客户端类型/" class="b-link-green">JavaWeb项目中获取客户端类型</a>
+                    <a href="/2019/04/14/Intellij-Idea-好用的插件/" class="b-link-green">Intellij-Idea 好用的插件</a>
                 </p>
             </div>
         </div>
@@ -685,7 +659,8 @@
         
         <div class="article col s12 m6 overflow-policy" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2019/04/14/Intellij-Idea-好用的插件/">
                     <div class="card-image">
@@ -704,9 +679,9 @@ request mapper //查找controller等路径映射方便
 Eclipse Code Formatter 在idea中使用eclipse 格式化配置文件
 </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-04-14
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-04-14
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -723,6 +698,7 @@ Eclipse Code Formatter 在idea中使用eclipse 格式化配置文件
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -741,19 +717,18 @@ Eclipse Code Formatter 在idea中使用eclipse 格式化配置文件
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/04/14/常用HTML-Meta标签/">
+                <a href="/2019/04/14/JavaWeb项目中获取客户端类型/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="常用HTML Meta标签">
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="JavaWeb项目中获取客户端类型">
                         
-                        <span class="card-title">常用HTML Meta标签</span>
+                        <span class="card-title">JavaWeb项目中获取客户端类型</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary block-with-text">&lt;meta name="author" content="flyTiger">
-&lt;meta name="description" content="飞虎窗格,github.fhtiger.com">
-&lt;meta name=</div>
+                    <div class="summary block-with-text">从事JavaWeb项目的开发,总会遇到需要根据不同客户端给予不同响应的需求,这里介绍一个好用的工具包.1.引入Maven依赖包UserAgentUtils pom
+&lt;!-- 最好使用最新版本的依赖,因为其中所有客户端的软件版本一直在更</div>
                     <div class="publish-info">
                             <span class="publish-date">
                                 <i class="fa fa-clock-o fa-fw icon-date"></i>2019-04-14
@@ -762,12 +737,8 @@ Eclipse Code Formatter 在idea中使用eclipse 格式化配置文件
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/HTML/" class="post-category" target="_blank">
-                                    HTML
-                                </a>
-                            
-                            <a href="/categories/HTML/WEB/" class="post-category" target="_blank">
-                                    WEB
+                            <a href="/categories/JAVA/" class="post-category" target="_blank">
+                                    JAVA
                                 </a>
                             
                             
@@ -777,12 +748,12 @@ Eclipse Code Formatter 在idea中使用eclipse 格式化配置文件
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/HTML/" target="_blank">
-                        <span class="chip bg-color">HTML</span>
+                    <a href="/tags/JAVA/" target="_blank">
+                        <span class="chip bg-color">JAVA</span>
                     </a>
                     
-                    <a href="/tags/META/" target="_blank">
-                        <span class="chip bg-color">META</span>
+                    <a href="/tags/JAVA-WEB/" target="_blank">
+                        <span class="chip bg-color">JAVA-WEB</span>
                     </a>
                     
                 </div>
