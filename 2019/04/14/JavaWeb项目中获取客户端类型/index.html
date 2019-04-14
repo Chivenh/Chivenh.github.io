@@ -5,9 +5,8 @@
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
     <meta name="keywords" content="JavaWeb项目中获取客户端类型, FlyTiger,flyTiger,fhtiger,窗格,飞虎,飛琥,IT资源">
-    <meta name="description" content="从事JavaWeb项目的开发,总会遇到需要根据不同客户端给予不同响应的需求,这里介绍一个好用的工具包.
-1.引入Maven依赖包UserAgentUtils pom
-&amp;lt;!-- 最好使用最新版本的依赖,因为其中所有客户端的软件版本一直在">
+    <meta name="description" content="从事JavaWeb项目的开发,总会遇到需要根据不同客户端给予不同响应的需求,这里介绍一个好用的工具包.1.引入Maven依赖包UserAgentUtils pom
+&amp;lt;!-- 最好使用最新版本的依赖,因为其中所有客户端的软件版本一直在更">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -420,8 +419,7 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="从事JavaWeb项目的开发-总会遇到需要根据不同客户端给予不同响应的需求-这里介绍一个好用的工具包"><a href="#从事JavaWeb项目的开发-总会遇到需要根据不同客户端给予不同响应的需求-这里介绍一个好用的工具包" class="headerlink" title="从事JavaWeb项目的开发,总会遇到需要根据不同客户端给予不同响应的需求,这里介绍一个好用的工具包."></a>从事JavaWeb项目的开发,总会遇到需要根据不同客户端给予不同响应的需求,这里介绍一个好用的工具包.</h2><hr>
-<h2 id="1-引入Maven依赖包"><a href="#1-引入Maven依赖包" class="headerlink" title="1.引入Maven依赖包"></a>1.引入Maven依赖包</h2><p><a href="https://mvnrepository.com/artifact/eu.bitwalker/UserAgentUtils" target="_blank" rel="noopener">UserAgentUtils pom</a></p>
+                <h2 id="从事JavaWeb项目的开发-总会遇到需要根据不同客户端给予不同响应的需求-这里介绍一个好用的工具包"><a href="#从事JavaWeb项目的开发-总会遇到需要根据不同客户端给予不同响应的需求-这里介绍一个好用的工具包" class="headerlink" title="从事JavaWeb项目的开发,总会遇到需要根据不同客户端给予不同响应的需求,这里介绍一个好用的工具包."></a>从事JavaWeb项目的开发,总会遇到需要根据不同客户端给予不同响应的需求,这里介绍一个好用的工具包.</h2><h3 id="1-引入Maven依赖包"><a href="#1-引入Maven依赖包" class="headerlink" title="1.引入Maven依赖包"></a>1.引入Maven依赖包</h3><p><a href="https://mvnrepository.com/artifact/eu.bitwalker/UserAgentUtils" target="_blank" rel="noopener">UserAgentUtils pom</a></p>
 <pre class=" language-xml"><code class="language-xml"><span class="token comment" spellcheck="true">&lt;!-- 最好使用最新版本的依赖,因为其中所有客户端的软件版本一直在更新中,使用最新的依赖才能准确的得到客户端的类型 --></span>
    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dependency</span><span class="token punctuation">></span></span>
    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>groupId</span><span class="token punctuation">></span></span>eu.bitwalker<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>groupId</span><span class="token punctuation">></span></span>
@@ -429,7 +427,7 @@
    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>version</span><span class="token punctuation">></span></span>1.21<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>version</span><span class="token punctuation">></span></span>
    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dependency</span><span class="token punctuation">></span></span>
 </code></pre>
-<h2 id="2-创建一个自己的小工具类"><a href="#2-创建一个自己的小工具类" class="headerlink" title="2.创建一个自己的小工具类"></a>2.创建一个自己的小工具类</h2><pre class=" language-java"><code class="language-java">    <span class="token keyword">public</span> <span class="token keyword">final</span> <span class="token keyword">class</span> <span class="token class-name">ClientExamineUtil</span> <span class="token punctuation">{</span>
+<h3 id="2-创建一个自己的小工具类"><a href="#2-创建一个自己的小工具类" class="headerlink" title="2.创建一个自己的小工具类"></a>2.创建一个自己的小工具类</h3><pre class=" language-java"><code class="language-java">    <span class="token keyword">public</span> <span class="token keyword">final</span> <span class="token keyword">class</span> <span class="token class-name">ClientExamineUtil</span> <span class="token punctuation">{</span>
 
     <span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token keyword">final</span> String UserAgentHeader <span class="token operator">=</span>  <span class="token string">"user-agent"</span><span class="token punctuation">;</span>
 
@@ -493,7 +491,7 @@
     <span class="token punctuation">}</span>
 
 </code></pre>
-<h2 id="3-现在就可以美美地判断请求那头是什么客户端了"><a href="#3-现在就可以美美地判断请求那头是什么客户端了" class="headerlink" title="3.现在就可以美美地判断请求那头是什么客户端了"></a>3.现在就可以美美地判断请求那头是什么客户端了</h2><p> <code>当然,这个工具的用途不止于此,可以根据它现有的功能,实现很多自己想要的功能.</code></p>
+<h3 id="3-现在就可以美美地判断请求那头是什么客户端了"><a href="#3-现在就可以美美地判断请求那头是什么客户端了" class="headerlink" title="3.现在就可以美美地判断请求那头是什么客户端了"></a>3.现在就可以美美地判断请求那头是什么客户端了</h3><p> <code>当然,这个工具的用途不止于此,可以根据它现有的功能,实现很多自己想要的功能.</code></p>
 
             </div>
             <hr>
@@ -700,9 +698,8 @@
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary block-with-text">从事JavaWeb项目的开发,总会遇到需要根据不同客户端给予不同响应的需求,这里介绍一个好用的工具包.
-1.引入Maven依赖包UserAgentUtils pom
-&lt;!-- 最好使用最新版本的依赖,因为其中所有客户端的软件版本一直在</div>
+                    <div class="summary block-with-text">从事JavaWeb项目的开发,总会遇到需要根据不同客户端给予不同响应的需求,这里介绍一个好用的工具包.1.引入Maven依赖包UserAgentUtils pom
+&lt;!-- 最好使用最新版本的依赖,因为其中所有客户端的软件版本一直在更</div>
                     <div class="publish-info">
                             <span class="publish-date">
                                 <i class="fa fa-clock-o fa-fw icon-date"></i>2019-04-14
