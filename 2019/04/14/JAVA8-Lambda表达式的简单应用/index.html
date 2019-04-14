@@ -465,9 +465,7 @@ static List&lt;Map&lt;String, Integer&gt;&gt; strAges = new ArrayList&lt;Map&lt;
     }
 };
 </code></pre><hr>
-<p>###接下来我们来用 Lambda 表达式来操作这些数据.</p>
-<p>####1.我们在测试中对数据常用的就是遍历,我们在测试类中添加如下方法:</p>
-<pre><code>/** 资源遍历 */
+<h3 id="接下来我们来用-Lambda-表达式来操作这些数据"><a href="#接下来我们来用-Lambda-表达式来操作这些数据" class="headerlink" title="接下来我们来用 Lambda 表达式来操作这些数据."></a>接下来我们来用 Lambda 表达式来操作这些数据.</h3><h4 id="1-我们在测试中对数据常用的就是遍历-我们在测试类中添加如下方法"><a href="#1-我们在测试中对数据常用的就是遍历-我们在测试类中添加如下方法" class="headerlink" title="1.我们在测试中对数据常用的就是遍历,我们在测试类中添加如下方法:"></a>1.我们在测试中对数据常用的就是遍历,我们在测试类中添加如下方法:</h4><pre><code>/** 资源遍历 */
 private static void each() {
     // 遍历List测试.
     integers.forEach(System.out::print);// =&gt;1 2 3 4 5 5
@@ -489,8 +487,7 @@ private static void each() {
     });// =&gt;{HP:12} {HuaWei:22} {ASUS:15}
 }
 </code></pre><p>在main方法中调用此 each() 方法即可看到上述执行结果.</p>
-<p>####2.java8 中流的 sorted 排序让数据集的排序变得更简单明了,同样我们创建如下方法并在 main方法中调用 .</p>
-<pre><code>/** 资源排序 */
+<h4 id="2-java8-中流的-sorted-排序让数据集的排序变得更简单明了-同样我们创建如下方法并在-main方法中调用"><a href="#2-java8-中流的-sorted-排序让数据集的排序变得更简单明了-同样我们创建如下方法并在-main方法中调用" class="headerlink" title="2.java8 中流的 sorted 排序让数据集的排序变得更简单明了,同样我们创建如下方法并在 main方法中调用 ."></a>2.java8 中流的 sorted 排序让数据集的排序变得更简单明了,同样我们创建如下方法并在 main方法中调用 .</h4><pre><code>/** 资源排序 */
 private static void sorted() {
     // List 排序 Comparator.reverseOrder() 是将顺序颠倒.
     integers.stream().sorted(Comparator.reverseOrder()).forEach(System.out::print);// =&gt;5 5 4 3 2 1
@@ -509,8 +506,7 @@ private static void sorted() {
         System.out.print(x);
     });// =&gt;{HP=11, HuaWei=32, ASUS=25} {HP=12, HuaWei=22, ASUS=15} {HP=22, HuaWei=42, ASUS=35}
 }
-</code></pre><p>####3. java8中stream的 filter提供了一种简单的过滤数据集得到我们想要的结果集的方法.</p>
-<pre><code>/** 资源过滤 */
+</code></pre><h4 id="3-java8中stream的-filter提供了一种简单的过滤数据集得到我们想要的结果集的方法"><a href="#3-java8中stream的-filter提供了一种简单的过滤数据集得到我们想要的结果集的方法" class="headerlink" title="3. java8中stream的 filter提供了一种简单的过滤数据集得到我们想要的结果集的方法."></a>3. java8中stream的 filter提供了一种简单的过滤数据集得到我们想要的结果集的方法.</h4><pre><code>/** 资源过滤 */
 private static void filter() {
     // List 过滤
     integers.stream().filter(x -&gt; x.compareTo(2) &gt; -1).forEach(System.out::print);// =&gt; 2 3 4 5 5
@@ -523,8 +519,7 @@ private static void filter() {
     strAges.stream().filter(x -&gt; x.get(&quot;ASUS&quot;).compareTo(20) &gt; 0).forEach(System.out::print);
     // =&gt;{HP=22, HuaWei=42, ASUS=35} {HP=11, HuaWei=32, ASUS=25}
 }
-</code></pre><p>####4. 有时候我们需要将集合中的数据进行一定方式处理后返回,以满足我们的应用场景.java8 stream的map可以满足你的需求.</p>
-<pre><code>/** 资源转换 */
+</code></pre><h4 id="4-有时候我们需要将集合中的数据进行一定方式处理后返回-以满足我们的应用场景-java8-stream的map可以满足你的需求"><a href="#4-有时候我们需要将集合中的数据进行一定方式处理后返回-以满足我们的应用场景-java8-stream的map可以满足你的需求" class="headerlink" title="4. 有时候我们需要将集合中的数据进行一定方式处理后返回,以满足我们的应用场景.java8 stream的map可以满足你的需求."></a>4. 有时候我们需要将集合中的数据进行一定方式处理后返回,以满足我们的应用场景.java8 stream的map可以满足你的需求.</h4><pre><code>/** 资源转换 */
 private static void transfer() {
     // 取List&lt;Map&gt;中一个字段组成新的List
     List&lt;Integer&gt; ASUS_Ages = strAges.stream().map(x -&gt; x.get(&quot;ASUS&quot;)).collect(Collectors.toList());
@@ -535,9 +530,7 @@ private static void transfer() {
     Integer ages = ASUS_Ages.stream().reduce(0, (a, b) -&gt; a + b);
     System.out.println(ages);// =&gt; 75
 }
-</code></pre><p>###大家看得过瘾不? 希望每天都有进步哦!</p>
-<p>####最后附上 main中代码.</p>
-<pre><code>public static void main(String[] args) {
+</code></pre><h3 id="大家看得过瘾不-希望每天都有进步哦"><a href="#大家看得过瘾不-希望每天都有进步哦" class="headerlink" title="大家看得过瘾不? 希望每天都有进步哦!"></a>大家看得过瘾不? 希望每天都有进步哦!</h3><h4 id="最后附上-main中代码"><a href="#最后附上-main中代码" class="headerlink" title="最后附上 main中代码."></a>最后附上 main中代码.</h4><pre><code>public static void main(String[] args) {
      each();
 
      sorted();
