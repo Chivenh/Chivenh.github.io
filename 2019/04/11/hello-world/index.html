@@ -576,11 +576,11 @@
     let gitalk = new Gitalk({
         clientID: '3a7bc8e3c450f4bee2c3',
         clientSecret: 'afb37971d006f7b9747aa50ab9dc72dd22fe9413',
-        repo: 'https://github.com/ghostFlyTiger/ghostFlyTiger.github.io.git',
+        repo: 'https://github.com/ghostFlyTiger/ghostFlyTiger.github.io',
         owner: 'ghostFlyTiger',
-        admin: ["ghostFlyTiger"],
+        admin: 'ghostFlyTiger',
         id: window.location.pathname,
-        distractionFreeMode: true  // Facebook-like distraction free mode
+        distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
     gitalk.render('gitalk-container');
