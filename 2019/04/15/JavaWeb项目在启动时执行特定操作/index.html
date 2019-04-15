@@ -4,13 +4,9 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Intellij-Idea 好用的插件, FlyTiger,flyTiger,fhtiger,窗格,飞虎,飛琥,IT资源">
-    <meta name="description" content="在使用Intellij-IDEA时发现的好用的插件一览JRebel
-
-request mapper //查找controller等路径映射方便
-
-Eclipse Code Formatter 在idea中使用eclipse 格式化配置文件
-">
+    <meta name="keywords" content="JavaWeb项目在启动时执行特定操作, FlyTiger,flyTiger,fhtiger,窗格,飞虎,飛琥,IT资源">
+    <meta name="description" content="如何让springmvc在启动的时候执行特定的业务处理?前言: java 的 web服务器启动时，经常会做一些特定的业务逻辑处理，比如数据库初始化，初始化系统参数，读取配置文库等.
+实现方法一.Web项目，Servlet非Spring解决方">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -18,7 +14,7 @@ Eclipse Code Formatter 在idea中使用eclipse 格式化配置文件
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Intellij-Idea 好用的插件 | 飞虎的窗格</title>
+    <title>JavaWeb项目在启动时执行特定操作 | 飞虎的窗格</title>
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -262,13 +258,13 @@ Eclipse Code Formatter 在idea中使用eclipse 格式化配置文件
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        Intellij-Idea 好用的插件
+                        JavaWeb项目在启动时执行特定操作
                     </div>
                 </div>
             </div>
@@ -278,10 +274,99 @@ Eclipse Code Formatter 在idea中使用eclipse 格式化配置文件
 
 
 
-<main class="container content">
+<main class="post-container content">
 
     
-    <!-- 文章内容详情 -->
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        margin: 35px 0 15px 0;
+        padding-left: 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #toc-content .is-active-link::before {
+        background-color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 20px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
 <div id="artDetail">
     <div class="card">
         <div class="card-content article-info">
@@ -290,8 +375,12 @@ Eclipse Code Formatter 在idea中使用eclipse 格式化配置文件
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Intellij-IDEA/" target="_blank">
-                                <span class="chip bg-color">Intellij-IDEA</span>
+                            <a href="/tags/JAVA/" target="_blank">
+                                <span class="chip bg-color">JAVA</span>
+                            </a>
+                        
+                            <a href="/tags/JAVA-WEB/" target="_blank">
+                                <span class="chip bg-color">JAVA-WEB</span>
                             </a>
                         
                     </div>
@@ -302,12 +391,12 @@ Eclipse Code Formatter 在idea中使用eclipse 格式化配置文件
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/NOTES/" class="post-category" target="_blank">
-                                NOTES
+                            <a href="/categories/JAVA/" class="post-category" target="_blank">
+                                JAVA
                             </a>
                         
-                            <a href="/categories/NOTES/Intellij-IDEA/" class="post-category" target="_blank">
-                                Intellij-IDEA
+                            <a href="/categories/JAVA/WEB/" class="post-category" target="_blank">
+                                WEB
                             </a>
                         
                     </div>
@@ -318,7 +407,7 @@ Eclipse Code Formatter 在idea中使用eclipse 格式化配置文件
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-04-14
+                    2019-04-15
                 </div>
 
                 
@@ -334,49 +423,55 @@ Eclipse Code Formatter 在idea中使用eclipse 格式化配置文件
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="在使用Intellij-IDEA时发现的好用的插件一览"><a href="#在使用Intellij-IDEA时发现的好用的插件一览" class="headerlink" title="在使用Intellij-IDEA时发现的好用的插件一览"></a>在使用Intellij-IDEA时发现的好用的插件一览</h2><pre class=" language-text"><code class="language-text">JRebel
+                <h1 id="如何让springmvc在启动的时候执行特定的业务处理"><a href="#如何让springmvc在启动的时候执行特定的业务处理" class="headerlink" title="如何让springmvc在启动的时候执行特定的业务处理?"></a>如何让springmvc在启动的时候执行特定的业务处理?</h1><p><strong>前言:</strong> java 的 web服务器启动时，经常会做一些特定的业务逻辑处理，比如数据库初始化，初始化系统参数，读取配置文库等.</p>
+<h2 id="实现方法"><a href="#实现方法" class="headerlink" title="实现方法"></a>实现方法</h2><h3 id="一-Web项目，Servlet非Spring"><a href="#一-Web项目，Servlet非Spring" class="headerlink" title="一.Web项目，Servlet非Spring"></a>一.Web项目，Servlet非Spring</h3><h4 id="解决方法：实现-ServletContextListener-接口"><a href="#解决方法：实现-ServletContextListener-接口" class="headerlink" title="解决方法：实现(ServletContextListener) 接口"></a>解决方法：实现(ServletContextListener) 接口</h4><ol>
+<li><p>定义类实现ServletContextListener接口,并定义自己要执行的业务逻辑</p>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">StartInit</span> <span class="token keyword">implements</span> <span class="token class-name">ServletContextListener</span> <span class="token punctuation">{</span>  
+    <span class="token keyword">static</span> <span class="token keyword">final</span> Logger logger <span class="token operator">=</span> LoggerFactory<span class="token punctuation">.</span><span class="token function">getLogger</span><span class="token punctuation">(</span>StartInit<span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+    <span class="token comment" spellcheck="true">// 系统初始化执行方法  </span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">contextDestroyed</span><span class="token punctuation">(</span>ServletContextEvent e<span class="token punctuation">)</span> <span class="token punctuation">{</span>  
+        logger<span class="token punctuation">.</span><span class="token function">info</span><span class="token punctuation">(</span><span class="token string">"系统停止..."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+    <span class="token punctuation">}</span>  
 
-request mapper //查找controller等路径映射方便
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">contextInitialized</span><span class="token punctuation">(</span>ServletContextEvent e<span class="token punctuation">)</span> <span class="token punctuation">{</span>  
+        logger<span class="token punctuation">.</span><span class="token function">info</span><span class="token punctuation">(</span><span class="token string">"系统初始化开始..."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
 
-Eclipse Code Formatter 在idea中使用eclipse 格式化配置文件
+        <span class="token comment" spellcheck="true">// 获取项目根目录  </span>
+        String root_path  <span class="token operator">=</span> e<span class="token punctuation">.</span><span class="token function">getServletContext</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getRealPath</span><span class="token punctuation">(</span><span class="token string">"/"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+        logger<span class="token punctuation">.</span><span class="token function">info</span><span class="token punctuation">(</span><span class="token string">"application path : {}"</span><span class="token punctuation">,</span>root_path<span class="token punctuation">)</span><span class="token punctuation">;</span>  
 
-RegexpTester 正则测试工具
-
-Builder Generator (1.1.7) 生成 建造者模式的代码.
-
-Easy Code (1.1.2-SNAPSHOT) 根据数据库表结构,自动生成代码工具.
-
-String Manipulation (6.1.143.000.0) UTF-8字符串转UNICODE,UNICODE转UTF-8字符串
-
-Vue.js 对Vue的便捷使用支持
-
-File Watchers (182.3911.9) 文件监听器,可以监听less文件自动编译成css,或者监听es6文件,使用babel自动转换成es5代码等功能.
-
-NodeJs
-
-Oro PHPStorm Plugin   Plugin for the PHPStorm that will help to increase the development speed on the projects based on the OroPlatform.
-    PHP在idea的支持插件
-
-PHP v183.4886.46
-
-Pug(ex-Jade)  Support for Pug (formerly known as Jade), a template language for JavaScript
-     一个js后端模板语言
-
-Lombok Plugin v0.23-2018.3
-
-Jpa Support v1.0.5 
-
-Maven Helper v3.7.172.1454.3  Maven 依赖查看
-
-Key Promoter X v5.12 查看并提示快捷键操作
-
-.gitignore 添加编辑.gitignore
-
-Git Flow Integration git流
-
-Translation 翻译
-
+        <span class="token comment" spellcheck="true">// 初始化 ConfigFactorty  </span>
+        ConfigFactory<span class="token punctuation">.</span><span class="token function">init</span><span class="token punctuation">(</span>root_path<span class="token punctuation">)</span><span class="token punctuation">;</span>  
+        <span class="token comment" spellcheck="true">// 初始化数据链接信息  </span>
+        DBManager<span class="token punctuation">.</span><span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+        <span class="token comment" spellcheck="true">// 初始化定时统计任务  </span>
+        TaskManager<span class="token punctuation">.</span><span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+        <span class="token comment" spellcheck="true">// 初始化用户信息查询位置  </span>
+        UserInfo<span class="token punctuation">.</span><span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+        <span class="token comment" spellcheck="true">// ... </span>
+        logger<span class="token punctuation">.</span><span class="token function">info</span><span class="token punctuation">(</span><span class="token string">"系统初始化结束..."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+    <span class="token punctuation">}</span>  
+<span class="token punctuation">}</span>
 </code></pre>
+</li>
+<li>将实现了ServletContextListener接口的类配置为( web.xml) listener<pre class=" language-xml"><code class="language-xml"><span class="token prolog">&lt;?xml version="1.0" encoding="UTF-8"?></span>  
+ <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>web-app</span> <span class="token attr-name">version</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>3.0<span class="token punctuation">"</span></span>   
+     <span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>http://java.sun.com/xml/ns/javaee<span class="token punctuation">"</span></span>   
+     <span class="token attr-name"><span class="token namespace">xmlns:</span>xsi</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>http://www.w3.org/2001/XMLSchema-instance<span class="token punctuation">"</span></span>   
+     <span class="token attr-name"><span class="token namespace">xsi:</span>schemaLocation</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>http://java.sun.com/xml/ns/javaee   
+     http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>  
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>display-name</span><span class="token punctuation">></span></span>JMD Project<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>display-name</span><span class="token punctuation">></span></span>   
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>welcome-file-list</span><span class="token punctuation">></span></span>  
+     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>welcome-file</span><span class="token punctuation">></span></span>index.jsp<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>welcome-file</span><span class="token punctuation">></span></span>  
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>welcome-file-list</span><span class="token punctuation">></span></span>  
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>listener</span><span class="token punctuation">></span></span>  
+     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>listener-class</span><span class="token punctuation">></span></span>com.jmd.init.StartInit<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>listener-class</span><span class="token punctuation">></span></span>  
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>listener</span><span class="token punctuation">></span></span>  
+   ...
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>web-app</span><span class="token punctuation">></span></span>
+</code></pre>
+<h3 id="Web项目-使用Spring框架"><a href="#Web项目-使用Spring框架" class="headerlink" title="Web项目,使用Spring框架"></a>Web项目,使用Spring框架</h3></li>
+</ol>
 
             </div>
             <hr>
@@ -524,12 +619,47 @@ Translation 翻译
                     </span>
                     <a href="https://github.fhtiger.com" class="b-link-green">飞虎的窗格</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2019/04/14/Intellij-Idea-好用的插件/" class="b-link-green">Intellij-Idea 好用的插件</a>
+                    <a href="/2019/04/15/JavaWeb项目在启动时执行特定操作/" class="b-link-green">JavaWeb项目在启动时执行特定操作</a>
                 </p>
             </div>
         </div>
     </div>
     <!-- 评论部分 comments=false,则不要评论部分-->
+
+
+    
+        <link rel="stylesheet" href="/libs/gitalk/gitalk.css">
+<link rel="stylesheet" href="/css/my-gitalk.css">
+
+<div class="card gitalk-card" data-aos="fade-up">
+    <div id="gitalk-container" class="card-content"></div>
+</div>
+<script src="/libs/md5/md5.min.js"></script>
+<script src="/libs/gitalk/gitalk.min.js"></script>
+<script>
+    let theGitalk = new Gitalk({
+        clientID: '3a7bc8e3c450f4bee2c3',
+        clientSecret: 'afb37971d006f7b9747aa50ab9dc72dd22fe9413',
+        repo: 'ghostFlyTiger.github.io.issues',
+        owner: 'ghostFlyTiger',
+        admin: ['ghostFlyTiger'],
+        //用md5处理路径,以防止路径过长而不能正常初始化issue
+        id: md5( window.location.pathname),
+        distractionFreeMode: false  // Facebook-like distraction free mode
+    });
+
+    theGitalk.render('gitalk-container');
+</script>
+    
+
+    
+
+    
+
+    
+
+    
+
 
     
 
@@ -538,7 +668,8 @@ Translation 翻译
         
         <div class="article col s12 m6 overflow-policy" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2019/04/15/JavaWeb项目在启动时执行特定操作/">
                     <div class="card-image">
@@ -553,9 +684,9 @@ Translation 翻译
                     <div class="summary block-with-text">如何让springmvc在启动的时候执行特定的业务处理?前言: java 的 web服务器启动时，经常会做一些特定的业务逻辑处理，比如数据库初始化，初始化系统参数，读取配置文库等.
 实现方法一.Web项目，Servlet非Spring解决方</div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-04-15
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-04-15
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -572,6 +703,7 @@ Translation 翻译
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -594,18 +726,22 @@ Translation 翻译
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/04/14/JavaWeb项目中获取客户端类型/">
+                <a href="/2019/04/14/Intellij-Idea-好用的插件/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="JavaWeb项目中获取客户端类型">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="Intellij-Idea 好用的插件">
                         
-                        <span class="card-title">JavaWeb项目中获取客户端类型</span>
+                        <span class="card-title">Intellij-Idea 好用的插件</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary block-with-text">从事JavaWeb项目的开发,总会遇到需要根据不同客户端给予不同响应的需求,这里介绍一个好用的工具包.1.引入Maven依赖包UserAgentUtils pom
-&lt;!-- 最好使用最新版本的依赖,因为其中所有客户端的软件版本一直在更</div>
+                    <div class="summary block-with-text">在使用Intellij-IDEA时发现的好用的插件一览JRebel
+
+request mapper //查找controller等路径映射方便
+
+Eclipse Code Formatter 在idea中使用eclipse 格式化配置文件
+</div>
                     <div class="publish-info">
                             <span class="publish-date">
                                 <i class="fa fa-clock-o fa-fw icon-date"></i>2019-04-14
@@ -614,8 +750,12 @@ Translation 翻译
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/JAVA/" class="post-category" target="_blank">
-                                    JAVA
+                            <a href="/categories/NOTES/" class="post-category" target="_blank">
+                                    NOTES
+                                </a>
+                            
+                            <a href="/categories/NOTES/Intellij-IDEA/" class="post-category" target="_blank">
+                                    Intellij-IDEA
                                 </a>
                             
                             
@@ -625,12 +765,8 @@ Translation 翻译
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/JAVA/" target="_blank">
-                        <span class="chip bg-color">JAVA</span>
-                    </a>
-                    
-                    <a href="/tags/JAVA-WEB/" target="_blank">
-                        <span class="chip bg-color">JAVA-WEB</span>
+                    <a href="/tags/Intellij-IDEA/" target="_blank">
+                        <span class="chip bg-color">Intellij-IDEA</span>
                     </a>
                     
                 </div>
@@ -680,6 +816,99 @@ Translation 翻译
     });
 </script>
 
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget">
+            <div class="toc-title"><i class="fa fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fa fa-list"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            // headingsOffset: -205,
+            headingSelector: 'h3, h4, h5'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h3, h4, h5').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).slideUp(500);
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).slideDown(500);
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
     
 
 </main>
