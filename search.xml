@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Maven 私库的搭建</title>
+      <link href="/2019/04/16/Maven-%E7%A7%81%E5%BA%93%E7%9A%84%E6%90%AD%E5%BB%BA/"/>
+      <url>/2019/04/16/Maven-%E7%A7%81%E5%BA%93%E7%9A%84%E6%90%AD%E5%BB%BA/</url>
+      
+        <content type="html"><![CDATA[<p> <strong>前言:</strong> Maven私服（即Repository Manager）的主要作用:</p><ul><li>方便内部人员发布内部使用的依赖;</li><li>方便存放官方仓库中没有的第三方依赖包;</li><li>减少从中央仓库下载的次数，节省带宽、提高maven build的效率;</li><li>减少对中央仓库的依赖，确保maven build的稳定性;</li></ul><h2 id="这里主要记录在windows系统中搭建私库的简单过程"><a href="#这里主要记录在windows系统中搭建私库的简单过程" class="headerlink" title="这里主要记录在windows系统中搭建私库的简单过程"></a>这里主要记录在windows系统中搭建私库的简单过程</h2><p> <strong>首先:</strong> 去官网下载最新免费开源版<a href="https://www.sonatype.com/nexus-repository-oss" target="_blank" rel="noopener">nexus</a>,  下载对应电脑系统的压缩包.如: <img src="/imgs/1/maven1.png" alt><br><code>解压后在 nexus-3.10.0-04 文件夹目录</code><br><img src="/imgs/1/maven2.png" alt><br><code>两个主要文件目录:</code> <strong>bin</strong>,<strong>etc</strong><br><code>etc 文件中有相关的配置文件.nexus-default.properties 文件中可以配置端口号和默认进入 IP</code><br><img src="/imgs/1/maven3.png" alt><br>启动程序:(<strong>小TIP</strong>)在bin目录下新建一个bat文件,其中写 cmd 即可,此为方便在打开cmd窗口时定位到此文件夹;<br><img src="/imgs/1/maven4.png" alt><br>右键此bat文件,以管理员运行.在进入cmd窗口后,执行下面指令:</p><blockquote><p><strong>nexus.exe/install Nexus Service</strong></p></blockquote><p>执行此指令后在 系统服务中会看到:<br><img src="/imgs/1/maven5.png" alt><br><strong>Nexus Service</strong> 服务,启动此服务,等一会之后在浏览器窗口中输入:<br><strong>localhost:8091</strong> (此处端口号为自定义的,默认为8081)</p><p>然后就可以进入nexus 仓库.<br>仓库默认有两个帐号:<br>Nexus中预留了两个登陆账户，一个是<code>admin</code>，一个是<code>anonymous</code>。<br>admin具有全部权限默认密码<code>admin123</code>；anonymous作为匿名用户，只具有查看权限</p><p>几个库的说明：</p><ul><li><strong>maven-central</strong>：maven中央库，默认从 <a href="https://repo1.maven.org/maven2/" target="_blank" rel="noopener">https://repo1.maven.org/maven2/</a> 拉取jar </li><li><strong>maven-releases</strong>：私库发行版jar </li><li><strong>maven-snapshots</strong>：私库快照（调试版本）jar </li><li><strong>maven-public</strong>：仓库分组，把上面三个仓库组合在一起对外提供服务，在本地maven基础配置settings.xml中使用</li></ul><blockquote><p><a href="https://guides.sonatype.com/repo3/quick-start-guides/proxying-maven-and-npm/" target="_blank" rel="noopener">搭建私库教程及安装包下载</a></p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> NOTES </category>
+          
+          <category> MAVEN </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> MAVEN </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>JavaWeb项目在启动时执行特定操作</title>
       <link href="/2019/04/15/JavaWeb%E9%A1%B9%E7%9B%AE%E5%9C%A8%E5%90%AF%E5%8A%A8%E6%97%B6%E6%89%A7%E8%A1%8C%E7%89%B9%E5%AE%9A%E6%93%8D%E4%BD%9C/"/>
       <url>/2019/04/15/JavaWeb%E9%A1%B9%E7%9B%AE%E5%9C%A8%E5%90%AF%E5%8A%A8%E6%97%B6%E6%89%A7%E8%A1%8C%E7%89%B9%E5%AE%9A%E6%93%8D%E4%BD%9C/</url>
