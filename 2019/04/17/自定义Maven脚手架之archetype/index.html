@@ -424,10 +424,10 @@
 <h4 id="2-按照需求配置archetype项目"><a href="#2-按照需求配置archetype项目" class="headerlink" title="2.按照需求配置archetype项目"></a>2.按照需求配置archetype项目</h4><p>要按照配置并发布骨架，主要是配置这几个部分：</p>
 <ol>
 <li>主目录下的pom.xml文件</li>
-<li>src/main/resources/archetype-resources 下面的目录和文件就是真正想要使用骨架创建的项目的结构,根据需求进行布置</li>
-<li>在src/main/resources/META-INF/maven/archetype-metadata.xml 配置相关的元数据描述信息,即告知骨架如何编译<h5 id="1-主目录下的pom-xml"><a href="#1-主目录下的pom-xml" class="headerlink" title="1)主目录下的pom.xml"></a>1)主目录下的pom.xml</h5></li>
+<li>src/main/resources/archetype-resources //下面的目录和文件就是真正想要使用骨架创建的项目的结构,根据需求进行布置</li>
+<li>在src/main/resources/META-INF/maven/archetype-metadata.xml //配置相关的元数据描述信息,即告知骨架如何编译</li>
 </ol>
-<pre class=" language-xml"><code class="language-xml"><span class="token prolog">&lt;?xml version="1.0" encoding="UTF-8"?></span>
+<h5 id="1-主目录下的pom-xml"><a href="#1-主目录下的pom-xml" class="headerlink" title="1)主目录下的pom.xml"></a>1)主目录下的pom.xml</h5><pre class=" language-xml"><code class="language-xml"><span class="token prolog">&lt;?xml version="1.0" encoding="UTF-8"?></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>project</span> <span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>http://maven.apache.org/POM/4.0.0<span class="token punctuation">"</span></span>
          <span class="token attr-name"><span class="token namespace">xmlns:</span>xsi</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>http://www.w3.org/2001/XMLSchema-instance<span class="token punctuation">"</span></span>
          <span class="token attr-name"><span class="token namespace">xsi:</span>schemaLocation</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
@@ -590,9 +590,8 @@
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>build</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>project</span><span class="token punctuation">></span></span>
 </code></pre>
-<p><strong>小TIP</strong> 在src/main/java这个目录下的java文件中的<strong>package</strong>可以引用<strong>${package}</strong>变量 如:<br><img src="/imgs/2/2019-04-17_224736.png" alt="controller"></p>
-<h3 id="安装并发布自定义的脚手架"><a href="#安装并发布自定义的脚手架" class="headerlink" title="安装并发布自定义的脚手架"></a>安装并发布自定义的脚手架</h3><p> 使用<code>mvn clean install</code>将脚手架安装到本地仓库,或者 <code>mvn depoly</code> 命令打包发布脚手架到远程仓库<br>现在就可以愉快的使用自已的脚手架来快速创建符合团队需求的项目结构了</p>
-<hr>
+<h5 id="4-小TIP"><a href="#4-小TIP" class="headerlink" title="4) 小TIP"></a>4) 小TIP</h5><p> &nbsp;&nbsp;&nbsp;&nbsp;在src/main/java这个目录下的java文件中的<strong>package</strong>可以引用<strong>${package}</strong>变量 如:<br> <img src="/imgs/2/2019-04-17_224736.png" alt></p>
+<h3 id="安装并发布自定义的脚手架"><a href="#安装并发布自定义的脚手架" class="headerlink" title="安装并发布自定义的脚手架"></a>安装并发布自定义的脚手架</h3><p> &nbsp;&nbsp;&nbsp;&nbsp;使用<code>mvn clean install</code>将脚手架安装到本地仓库,或者 <code>mvn depoly</code> 命令打包发布脚手架到远程仓库<br>现在就可以愉快的使用自已的脚手架来快速创建符合团队需求的项目结构了</p>
 <blockquote>
 <p><em>官方文档地址</em>: <a href="http://maven.apache.org/guides/mini/guide-creating-archetypes.html" target="_blank" rel="noopener">http://maven.apache.org/guides/mini/guide-creating-archetypes.html</a></p>
 </blockquote>
